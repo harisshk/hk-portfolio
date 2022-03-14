@@ -37,7 +37,7 @@ function App() {
           <Route path="/resume" exact component={Resume} />
           <Redirect to="/" />
         </Switch>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </BrowserRouter>
   );

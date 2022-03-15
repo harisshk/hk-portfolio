@@ -13,6 +13,7 @@ function Github() {
         blockSize={15}
         blockMargin={5}
         fontSize={16}
+        showWeekdayLabels
       />
     </Row>
   );

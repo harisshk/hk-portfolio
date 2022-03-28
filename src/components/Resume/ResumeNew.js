@@ -23,7 +23,7 @@ function ResumeNew() {
       <Container fluid className="resume-section">
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button variant="primary" href={pdf} target="_blank">
+          <Button variant="primary" href={"/"} target="_blank">
             <AiOutlineDownload />
             &nbsp;Download CV
           </Button>

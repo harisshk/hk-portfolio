@@ -3,12 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.jpeg";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import ecom from "../../Assets/Projects/e-com.png";
 
 function Projects() {
   return (
@@ -23,16 +18,16 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatify}
+          <ProjectCard
+              imgPath={ecom}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              link="https://github.com/soumyajit4419/Chatify"
+              title="E-Commerce Admin"
+              description="E-Commerce admin to manage the products build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
@@ -81,7 +76,7 @@ function Projects() {
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
               link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>

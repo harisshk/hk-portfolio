@@ -3,7 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
-import ecom from "../../Assets/Projects/e-com.png";
+import ecom from "../../Assets/Projects/ecom2.png";
+import social from "../../Assets/Projects/social.png";
+import propy from "../../Assets/Projects/propy.png";
+import register from "../../Assets/Projects/register.png";
+import jurni from "../../Assets/Projects/jurni.png";
 
 function Projects() {
   return (
@@ -18,26 +22,54 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
-          <ProjectCard
+            <ProjectCard
+              imgPath={social}
+              isBlog={false}
+              title="Fitness & Social Media Admin App"
+              description="Admin to manage the social media fitness app build with react.js, Material-UI, and Firebase analytics. Have features which allows admin to block posts, users and onboard coaches (a role in this app)."
+              link="https://admin.myjurni.org"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={ecom}
               isBlog={false}
               title="E-Commerce Admin"
-              description="E-Commerce admin to manage the products build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              
+              description="E-Commerce admin to manage the products build with react.js, Material-UI, and Firebase. Have features to add and manage products, manage orders and shipping with Shipstation."
+              link="https://organizemeadmin.web.app/"
             />
           </Col>
-
-          {/* <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={propy}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              link="https://github.com/soumyajit4419/Plant_AI"
+              title="Property Management"
+              description="Web app to manage the properties build with react.js, Prime-UI, and Firebase Push Notifications. Have features to add and manage properties, Support system for both tenant and the house owner. Integrated Razorpay for rent payment."
+              link="https://dashboard.abmsapp.com"
             />
           </Col>
 
           <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={jurni}
+              isBlog={false}
+              title="Fitness & Social Media App"
+              description="An IOS app built with React Native. Managing the app by developing small features and resolving bugs. Had an experience for pushing an IOS app to App store"
+              link="https://apps.apple.com/in/app/jurni/id1580909228"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={register}
+              isBlog={false}
+              title="Warranty Registration"
+              description="Warranty registration page for an E-Commerce company."
+              link="https://register.audyglobal.com"
+            />
+          </Col>
+
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={editor}
               isBlog={false}

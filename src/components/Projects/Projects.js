@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
@@ -8,8 +8,13 @@ import social from "../../Assets/Projects/social.png";
 import propy from "../../Assets/Projects/propy.png";
 import register from "../../Assets/Projects/register.png";
 import jurni from "../../Assets/Projects/jurni.png";
+import tesla from '../../Assets/Projects/tesla.png'
+import { firebaseAnalytics } from "../../analytics/firebase";
 
 function Projects() {
+  useEffect(() => {
+    firebaseAnalytics.logEvent("PROJECTS_PAGE");
+  }, [])
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -56,6 +61,15 @@ function Projects() {
               title="Fitness & Social Media App"
               description="An IOS app built with React Native. Managing the app by developing small features and resolving bugs. Had an experience for pushing an IOS app to App store"
               link="https://apps.apple.com/in/app/jurni/id1580909228"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={tesla}
+              isBlog={false}
+              title="Tesla Landing Page"
+              description="Just a landing page with list of tesla products."
+            // link="https://apps.apple.com/in/app/jurni/id1580909228"
             />
           </Col>
 

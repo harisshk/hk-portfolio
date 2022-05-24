@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Github from "./Github";
@@ -6,8 +6,12 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import { firebaseAnalytics } from "../../analytics/firebase";
 
 function About() {
+  useEffect(() => {
+    firebaseAnalytics.logEvent("ABOUT_PAGE");
+  }, [])
   return (
     <Container fluid className="about-section">
       <Particle />

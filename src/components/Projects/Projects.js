@@ -7,8 +7,9 @@ import ecom from "../../Assets/Projects/ecom2.png";
 import social from "../../Assets/Projects/social.png";
 import propy from "../../Assets/Projects/propy.png";
 import register from "../../Assets/Projects/register.png";
-import jurni from "../../Assets/Projects/jurni.png";
+// import jurni from "../../Assets/Projects/jurni.png";
 import tesla from '../../Assets/Projects/tesla.png'
+import bike from '../../Assets/Projects/bike.png'
 import { firebaseAnalytics } from "../../analytics/firebase";
 
 function Projects() {
@@ -46,6 +47,15 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={bike}
+              isBlog={false}
+              title="Bike service Booking"
+              description="Bike service booking to manage the services and book for the service build with react.js, Material-UI, PrimeReact."
+              link="https://bike-service-webapp.web.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={propy}
               isBlog={false}
               title="Property Management"
@@ -54,7 +64,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={jurni}
               isBlog={false}
@@ -62,7 +72,7 @@ function Projects() {
               description="An IOS app built with React Native. Managing the app by developing small features and resolving bugs. Had an experience for pushing an IOS app to App store"
               link="https://apps.apple.com/in/app/jurni/id1580909228"
             />
-          </Col>
+          </Col> */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={tesla}

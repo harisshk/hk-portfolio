@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
@@ -16,7 +16,6 @@ const resumeLink =
 function ResumeNew() {
   const hasWindow = typeof window !== 'undefined';
   const width = hasWindow ? window.innerWidth : null;
-  console.log(width)
   useEffect(() => {
     firebaseAnalytics.logEvent("RESUME_PAGE");
   }, []);

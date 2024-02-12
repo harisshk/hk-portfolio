@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
-// import Home2 from "./Home2";
+import Home2 from "./Home2";
 import Type from "./Type";
 import { firebaseAnalytics } from "../../analytics/firebase";
 
@@ -22,7 +22,7 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                I'M
+                I'm
                 <strong className="main-name"> Harish Kumar</strong>
               </h1>
 
@@ -37,7 +37,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      {/* <Home2 /> */}
+      <Home2 />
     </div>
   );
 }

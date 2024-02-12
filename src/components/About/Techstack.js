@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import {
   DiJavascript1,
   DiReact,
@@ -8,41 +8,59 @@ import {
   DiPython,
   DiGit,
 } from "react-icons/di";
-import { SiFirebase, SiCsharp, SiAmazonaws } from "react-icons/si";
+import {
+  SiFirebase,
+  SiCsharp,
+  SiAmazonaws,
+  SiApollographql,
+  SiAzuredevops,
+  SiNeo4J,
+  SiExpress
+} from "react-icons/si";
+import IconHolder from "./IconHolder";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
+      <IconHolder title={"Javascript"}>
         <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </IconHolder>
+      <IconHolder title={"NodeJS"}>
         <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </IconHolder >
+      <IconHolder title={"ExpressJS"}>
+        <SiExpress  />
+      </IconHolder >
+      <IconHolder title={"React"}>
         <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </IconHolder>
+      <IconHolder title={"MonogoDB"}>
         <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </IconHolder>
+      <IconHolder title={"Neo4j"}>
+        <SiNeo4J  />
+      </IconHolder>
+      <IconHolder title={"Apollo GraphQL"}>
+        <SiApollographql  />
+      </IconHolder>
+      <IconHolder title={"Python"}>
         <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </IconHolder>
+      <IconHolder title={"AWS"}>
         <SiAmazonaws />
-      </Col>
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <SiTensorflow />
-      </Col> */}
-      <Col xs={4} md={2} className="tech-icons">
+      </IconHolder>
+      <IconHolder title={"Azure"}>
+        <SiAzuredevops  />
+      </IconHolder>
+      <IconHolder title={"Git"}>
         <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </IconHolder>
+      <IconHolder title={"C#"}>
         <SiCsharp />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </IconHolder>
+      <IconHolder title={"Firebase"}>
         <SiFirebase />
-      </Col>
+      </IconHolder>
     </Row>
   );
 }

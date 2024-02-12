@@ -1,35 +1,48 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import {
   SiLinux,
   SiVisualstudiocode,
   SiPostman,
   SiHeroku,
   SiAmazonaws,
-  SiXcode
+  SiXcode,
+  SiSwagger,
+  SiOpenai 
 } from "react-icons/si";
+import IconHolder from "./IconHolder";
+import { IoLogoFigma } from "react-icons/io5";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
+      <IconHolder title={"Linux"}>
         <SiLinux />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </IconHolder >
+      <IconHolder title={"VS Code"}>
         <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </IconHolder>
+      <IconHolder title={"Swagger"}>
+        <SiSwagger  />
+      </IconHolder>
+      <IconHolder title={"Xcode"}>
         <SiXcode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </IconHolder>
+      <IconHolder title={"AWS"}>
         <SiAmazonaws />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </IconHolder>
+      <IconHolder title={"Postman"}>
         <SiPostman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </IconHolder>
+      <IconHolder title={"OpenAI"}>
+        <SiOpenai  />
+      </IconHolder>
+      <IconHolder title={"Figma"}>
+        <IoLogoFigma  />
+      </IconHolder>
+      <IconHolder title={"Heroku"}>
         <SiHeroku />
-      </Col>
+      </IconHolder>
     </Row>
   );
 }

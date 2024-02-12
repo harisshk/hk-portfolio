@@ -30,7 +30,8 @@ function ResumeNew() {
         </Row>
         <div style={{ display: "flex", justifyContent: "center", position: "relative", padding: "0 10vh" }}>
           <Document file={pdf} >
-            <Page pageNumber={1} width={width - 100} />
+            <Page pageNumber={1} width={width - width*5/10} />
+            <Page pageNumber={2} width={width - width*5/10} />
           </Document>
         </div>
       </Container>

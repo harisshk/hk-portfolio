@@ -8,7 +8,9 @@ import {
   SiAmazonaws,
   SiXcode,
   SiSwagger,
-  SiOpenai 
+  SiOpenai,
+  SiJira,
+  SiSlack 
 } from "react-icons/si";
 import IconHolder from "./IconHolder";
 import { IoLogoFigma } from "react-icons/io5";
@@ -42,6 +44,12 @@ function Toolstack() {
       </IconHolder>
       <IconHolder title={"Heroku"}>
         <SiHeroku />
+      </IconHolder>
+      <IconHolder title={"Jira"}>
+        <SiJira  />
+      </IconHolder>
+      <IconHolder title={"Slack"}>
+        <SiSlack   />
       </IconHolder>
     </Row>
   );
